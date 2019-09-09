@@ -39,5 +39,35 @@ TortoiseGit 提交代码每次需要输入用户名和密码,解决办法
     进行分支合并之前我们需要明确哪个分支将要合并到哪个分支，首先通过“Switch/CheckOut”切换到主干分支（如develop分支）,然后通过“Merge”继进行合并操作，在对话框中选择需要合并的分支。
     分支合并成功后，我们即可以通过Commit与PUSH操作将合并上传到中心服务器。
 
-6.
+6.tortoisegit分支使用
+    git相对于其他的版本控制，优势在于分支管理。
+
+    几个常见情况及分支使用方法。
+
+    1  对于自己的代码修改后，却已经不知道服务器上的代码是否已经发生改变。此时想上传自己的代码。
+    1）在master上创建分支mysrc；
+    2）switch到mysrc分支，进行修改代码；
+    3）修改好代码后，进行git commit操作；
+    4）switch到master分支，进行git pull操作，将服务器上的代码签下来；
+    5）进行git merge from mysrc操作，将mysrc的代码合并到master中；
+    6）git commit操作；
+    7）git push操作。
+
+    2  修改自己的代码过程中，还不需要上传时，需要从服务器上签新的代码，但保留当前的代码修改。
+    1）在master上创建分支mysrc；
+    2）switch到mysrc分支，进行代码修改；
+    3）进行git commit 操作；
+    4）switch到master分支，进行git pull操作；
+    5）switch到mysrc分支，进行git merge from master操作；
+    6）git commit操作。
+
+    3  修改了代码，但仅想上传部分代码，其余代码保留同服务器版本。
+    1）在master上创建分支mysrc；
+    2）switch到mysrc分支，进行代码修改；
+    3）修改好后，对部分代码进行git commit操作；
+    4）进行git rebase操作，将其他代码还原；
+    5）switch到master分支，进行git merge from mysrc操作；
+    6）git push操作。
+
+7.
 
