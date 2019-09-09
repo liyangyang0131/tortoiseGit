@@ -69,5 +69,9 @@ TortoiseGit 提交代码每次需要输入用户名和密码,解决办法
     5）switch到master分支，进行git merge from mysrc操作；
     6）git push操作。
 
-7.
-
+7.代码回滚 
+    https://www.cnblogs.com/ivan5277/p/9773399.html 
+    1.本地回滚 
+    右击原代码文件夹-->TortoiseGit-->Show log 选择要回滚到的记录，右击选择Reset this to this vision。在弹出的对话框中选择reset Type 为hard。 
+    2.服务器端回滚 
+    如果想将本地回滚的代码，提交到服务器，而将服务器的代码覆盖掉的话。直接选择push，在弹出的对话框中，Options中选择 force known changes.
