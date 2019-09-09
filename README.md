@@ -78,4 +78,10 @@ TortoiseGit 提交代码每次需要输入用户名和密码,解决办法
     右击原代码文件夹-->TortoiseGit-->Show log 选择要回滚到的记录
     右击选择Reset this to this vision。在弹出的对话框中选择reset Type 为hard。
     2.服务器端回滚 
-    如果想将本地回滚的代码，提交到服务器，而将服务器的代码覆盖掉的话。直接选择push，在弹出的对话框中，Options中选择 force known changes.
+    如果想将本地回滚的代码，提交到服务器，而将服务器的代码覆盖掉的话。直接选择push，在弹出的对话框中，Options中选择 force known changes
+
+8.TortoiseGit右键没有pull
+
+    （注意 ：首先要提前做好备份！！！）选择revert，还原代码
+    选择切换分支，如果 报git did not exit cleanly (exit code 128) ，选择clean up,清除一下。
+    完成后，选择切换分支，之后再次切回原分支，即可显示pull。
