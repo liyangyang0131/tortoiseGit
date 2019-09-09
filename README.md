@@ -25,7 +25,7 @@ TortoiseGit 提交代码每次需要输入用户名和密码,解决办法
     2.场景二
     user0 有新提交
     user1 没有pull -> 写新代码 -> commit&push -> 提示有冲突
-    
+
     解决办法一
     -> pull -> 代码文件会显示冲突 -> 右键选择edit conficts，解决后点击编辑页面的 mark as resolved ->  commit&push
 
@@ -75,10 +75,7 @@ TortoiseGit 提交代码每次需要输入用户名和密码,解决办法
 7.代码回滚（https://www.cnblogs.com/ivan5277/p/9773399.html ）
 
     1.本地回滚
-
     右击原代码文件夹-->TortoiseGit-->Show log 选择要回滚到的记录
     右击选择Reset this to this vision。在弹出的对话框中选择reset Type 为hard。
-
     2.服务器端回滚 
-
     如果想将本地回滚的代码，提交到服务器，而将服务器的代码覆盖掉的话。直接选择push，在弹出的对话框中，Options中选择 force known changes.
